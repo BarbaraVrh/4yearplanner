@@ -12,11 +12,11 @@ class SQLConnection(object):
 
     def getConnection(self):
 
-        server = 'sqlservervrhovacbarbara01.database.windows.net'
-        database = 'sqldbvrhovacbarbara01'
-        username = 'sqlserveradmin'
-        password = 'Password123'
-        driver= '{ODBC Driver 18 for SQL Server}'
+        server = ''
+        database = ''
+        username = ''
+        password = ''
+        driver= ''
 
         if (self.__connection == None):
             self.__connection = pyodbc.connect('DRIVER='+driver+';SERVER=tcp:'+server+';PORT=1433;DATABASE='+database+';UID='+username+';PWD='+ password)
